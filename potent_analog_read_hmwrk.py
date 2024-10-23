@@ -1,10 +1,6 @@
 # Paul McWhorters Pico Lesson 5 Homework
 # https://youtu.be/ODWwErH_iGA?si=67mKYTVGi-qRjVIQ
 # Potentiometer Lesson 5
-# (reading * 100) / (65535 - 160) = Percentage of volts
-# 3.3 * Percentage of Volts = Actual Volts
-# Percent of Volts is poV
-
 import machine
 from time import sleep
 
@@ -17,7 +13,6 @@ while True:
                                                 # was different because I used a
                                                 # different potentiometer. My formula is
                                                 # adjusted to that
-    # vRatio = (voltage * 100) / 3.3
     spwR = 3.3 - voltage
     rRatio = (spwR * 100) / 3.3
     print ("Digital Voltage: ",potVal)
