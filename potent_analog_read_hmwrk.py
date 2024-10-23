@@ -3,7 +3,6 @@
 # Potentiometer Lesson 5
 import machine
 from time import sleep
-
 potPin=28
 myPot=machine.ADC(potPin) #analog digital converter reading
 
